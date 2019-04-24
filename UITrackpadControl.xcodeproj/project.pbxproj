@@ -13,6 +13,9 @@
 		B063EDA2227095D3004D57B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B063EDA1227095D3004D57B7 /* Assets.xcassets */; };
 		B063EDA5227095D3004D57B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B063EDA3227095D3004D57B7 /* LaunchScreen.storyboard */; };
 		B063EDA8227095D3004D57B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B063EDA7227095D3004D57B7 /* main.m */; };
+		B063EDB4227095F5004D57B7 /* UICursorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B063EDAE227095F5004D57B7 /* UICursorWindow.m */; };
+		B063EDB5227095F5004D57B7 /* UITrackpadView.m in Sources */ = {isa = PBXBuildFile; fileRef = B063EDB0227095F5004D57B7 /* UITrackpadView.m */; };
+		B063EDB6227095F5004D57B7 /* UIMouseCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = B063EDB2227095F5004D57B7 /* UIMouseCursor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		B063EDA4227095D3004D57B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B063EDA6227095D3004D57B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B063EDA7227095D3004D57B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B063EDAE227095F5004D57B7 /* UICursorWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICursorWindow.m; sourceTree = "<group>"; };
+		B063EDAF227095F5004D57B7 /* UICursorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICursorWindow.h; sourceTree = "<group>"; };
+		B063EDB0227095F5004D57B7 /* UITrackpadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITrackpadView.m; sourceTree = "<group>"; };
+		B063EDB1227095F5004D57B7 /* UIMouseCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMouseCursor.h; sourceTree = "<group>"; };
+		B063EDB2227095F5004D57B7 /* UIMouseCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMouseCursor.m; sourceTree = "<group>"; };
+		B063EDB3227095F5004D57B7 /* UITrackpadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITrackpadView.h; sourceTree = "<group>"; };
+		B063EDB8227099D8004D57B7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 		B063ED8C227095D2004D57B7 = {
 			isa = PBXGroup;
 			children = (
+				B063EDB8227099D8004D57B7 /* README.md */,
 				B063ED97227095D2004D57B7 /* UITrackpadControl */,
 				B063ED96227095D2004D57B7 /* Products */,
 			);
@@ -62,6 +73,7 @@
 				B063ED99227095D2004D57B7 /* AppDelegate.m */,
 				B063ED9B227095D2004D57B7 /* ViewController.h */,
 				B063ED9C227095D2004D57B7 /* ViewController.m */,
+				B063EDB7227095FD004D57B7 /* UITrackpad */,
 				B063ED9E227095D2004D57B7 /* Main.storyboard */,
 				B063EDA1227095D3004D57B7 /* Assets.xcassets */,
 				B063EDA3227095D3004D57B7 /* LaunchScreen.storyboard */,
@@ -69,6 +81,19 @@
 				B063EDA7227095D3004D57B7 /* main.m */,
 			);
 			path = UITrackpadControl;
+			sourceTree = "<group>";
+		};
+		B063EDB7227095FD004D57B7 /* UITrackpad */ = {
+			isa = PBXGroup;
+			children = (
+				B063EDAF227095F5004D57B7 /* UICursorWindow.h */,
+				B063EDAE227095F5004D57B7 /* UICursorWindow.m */,
+				B063EDB1227095F5004D57B7 /* UIMouseCursor.h */,
+				B063EDB2227095F5004D57B7 /* UIMouseCursor.m */,
+				B063EDB3227095F5004D57B7 /* UITrackpadView.h */,
+				B063EDB0227095F5004D57B7 /* UITrackpadView.m */,
+			);
+			path = UITrackpad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B063ED9D227095D2004D57B7 /* ViewController.m in Sources */,
+				B063EDB6227095F5004D57B7 /* UIMouseCursor.m in Sources */,
+				B063EDB5227095F5004D57B7 /* UITrackpadView.m in Sources */,
 				B063EDA8227095D3004D57B7 /* main.m in Sources */,
 				B063ED9A227095D2004D57B7 /* AppDelegate.m in Sources */,
+				B063EDB4227095F5004D57B7 /* UICursorWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +242,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -267,8 +297,10 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;

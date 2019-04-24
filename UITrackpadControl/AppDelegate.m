@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UITrackpadView.h"
 
 @interface AppDelegate ()
 
@@ -39,7 +40,16 @@
 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-	// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+	
+	CGRect f = CGRectMake([UIScreen mainScreen].bounds.size.width-320-20, [UIScreen mainScreen].bounds.size.height-320-20, 320, 320);
+	
+	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+	{
+		f.origin.x = ([UIScreen mainScreen].bounds.size.width-320)/2;
+	}
+	
+	UITrackpadView *trackpad = [[UITrackpadView alloc] initWithFrame:f];
+	[self.window addSubview:trackpad];
 }
 
 
